@@ -1,37 +1,53 @@
-
+/* Body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    margin: 20px;
-    padding: 20px;
+    background: linear-gradient(to bottom, #ffffff, #000000); /* White to black gradient */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
 }
 
-p {
+/* Container for the form */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+/* Title */
+h1 {
     font-size: 24px;
-    font-weight: bold;
     text-align: center;
     color: #343a40;
     margin-bottom: 30px;
 }
 
-/* Styling the form */
-div {
-    margin-bottom: 15px;
-}
-
+/* Label styling */
 label {
     font-weight: bold;
     color: #495057;
+    display: block;
+    margin-bottom: 8px;
 }
 
+/* Input field styling */
 input.form-control {
+    width: 100%;
     border: 1px solid #ced4da;
     border-radius: 4px;
-    padding: 10px;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-/* Input hover and focus effects */
+/* Input focus and hover effect */
 input.form-control:focus {
     border-color: #007bff;
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
@@ -42,13 +58,15 @@ button {
     background-color: #007bff;
     color: #ffffff;
     border: none;
-    padding: 10px 15px;
+    padding: 12px 20px;
     border-radius: 4px;
     font-size: 16px;
+    width: 100%;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
+/* Button hover effect */
 button:hover {
     background-color: #0056b3;
 }
